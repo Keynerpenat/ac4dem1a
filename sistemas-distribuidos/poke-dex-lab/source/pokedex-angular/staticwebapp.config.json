@@ -1,14 +1,11 @@
 {
   "globalHeaders": {
-    "Content-Security-Policy": "default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; img-src 'self' data: https://pokeapi.co; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pokeapi.co; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content",
-    "X-Content-Type-Options": "nosniff",
+    "Content-Security-Policy": "default-src 'self' https://pokeapi.co; connect-src *; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src * data:; font-src 'self' https://fonts.gstatic.com;",
     "X-Frame-Options": "DENY",
-    "X-XSS-Protection": "1; mode=block",
-    "Referrer-Policy": "strict-origin-when-cross-origin",
-    "Permissions-Policy": "geolocation=(), camera=(), microphone=(), fullscreen=(), payment=()",
+    "Permissions-Policy": "geolocation=(), camera=(), microphone=()",
     "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload"
   },
   "navigationFallback": {
     "rewrite": "/index.html"
-  }
+  }
 }
